@@ -1,0 +1,9 @@
+Things to do in this project
+
+- change the view of the website to a nice UI (preferrably starting from mobile design)
+- Add authentication for users (you can use only name for that)
+    -- authenticate through user local storage
+    -- add logout to remove local storage so that user can re-authenticate. 
+        -- inform user of the implication user logging out
+        -- Tell user that their to-do list will be canceled or erase
+- Let users' todos be to be added to the local storage storing the users' todos

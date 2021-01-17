@@ -1,0 +1,35 @@
+body {
+    overflow-x: hidden;
+}
+
+.form-control:focus {
+    border-color: #6c63ff!important;
+}
+
+.form-control {
+    background-color: inherit!important;
+}
+
+.login-btn {
+    background-color: #6c63ff!important;
+    color: aliceblue!important;
+}
+
+.login-area {
+    padding: 25px 10px;
+    background-color: white;
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.175)!important;
+}
+.has-error, .has-error:focus {
+    border-color: red!important;
+}
+.has-success, .has-success:focus {
+    border-color: green!important;
+}
+
+@media (min-width: 576px) {
+    .login-area {
+        padding: 30px 50px!important;
+    }
+    
+}

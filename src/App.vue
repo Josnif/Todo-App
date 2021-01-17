@@ -1,12 +1,32 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+    <div v-if="pageLoading" class="preload d-flex justify-content-center">
+      <div class="align-content-center spinner-border"></div>
     </div>
-    <router-view/>
+    <router-view class="h-100 mh-100" v-else/>
   </div>
 </template>
+
+<script>
+export default {
+  components: {
+  },
+  data() {
+    return {
+      pageLoading: true
+    }
+  },
+  created() {
+    setTimeout(() => {
+      this.pageLoading = false;
+    }, 2000);
+  },
+  mounted() {
+
+  }
+
+}
+</script>
 
 <style>
 #app {
@@ -15,8 +35,32 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  line-height: 1.4;
 }
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.bg-col {
+  background: #f1f1f1f7;
+}
+.preload {
+  transform: translateY(300px);
+}
+.full-height {
+  height: 100vh;
+}
+.flex-center {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.position-ref {
+  position: relative;
+}
+/*
 #nav {
   padding: 30px;
 }
@@ -29,4 +73,5 @@
 #nav a.router-link-exact-active {
   color: #42b983;
 }
+*/
 </style>
