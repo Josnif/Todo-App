@@ -27,12 +27,12 @@ export default {
         background: #ddd;
         position: fixed;
         top: 0;
-        z-index: 20;
+        z-index: 2000;
     }
     .modal-in {
         background:#fff;
         padding: 25px;
-        z-index: 30;
+        z-index: 3000;
     }
     .position-abs {
         position:absolute;

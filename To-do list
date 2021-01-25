@@ -7,3 +7,43 @@ Things to do in this project
         -- inform user of the implication user logging out
         -- Tell user that their to-do list will be canceled or erase
 - Let users' todos be to be added to the local storage storing the users' todos
+
+
+
+save
+<div class="center-banner">
+    <div class="icb-1"></div>
+    <div class="icb-2"></div>
+</div>
+
+
+
+.center-banner {
+    position: absolute;
+width: 147.92px;
+height: 151.12px;
+left: 78.92px;
+top: 180px;
+
+transform: matrix(-1, 0, 0, 1, 0, 0);
+  }
+  .icb-1 {
+    position: absolute;
+width: 147.92px;
+height: 130.12px;
+left: 78.92px;
+top: 180px;
+
+background: linear-gradient(180deg, #1E2A93 0%, #FFB8A9 100%);
+transform: matrix(-1, 0, 0, 1, 0, 0);
+  }
+  .icb-2 {
+    position: absolute;
+width: 147.92px;
+height: 130.12px;
+left: 78.92px;
+top: 201px;
+
+background: linear-gradient(180deg, #FFB8A9 0%, #F1B0A8 27.08%, #1E2A93 100%);
+transform: matrix(-1, 0, 0, 1, 0, 0);    
+  }

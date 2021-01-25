@@ -12,6 +12,20 @@ const store = Vue.observable({
       user: [],
       error: []
     },
+    get(database) {
+        if(database == 'categories') {
+            let cate = new db(CATEGORY_DB);
+
+            this.state.categories = cate.get()    
+
+        } else if(database == 'tasks') {
+            let tasks = new db(TASK_DB);
+
+            this.state.tasks = tasks.get();
+        } else {
+            console.error("Database name: '"+database+"' does not exist");
+        }
+    },
     set(database, data) {
         if(database == 'categories') {
             let cate = new db(CATEGORY_DB);
@@ -34,24 +48,8 @@ const store = Vue.observable({
             console.error("Database name: '"+database+"' does not exist");
         }
     },
-    get(database) {
-        if(database == 'categories') {
-            let cate = new db(CATEGORY_DB);
-
-            this.state.categories = cate.get()    
-
-        } else if(database == 'tasks') {
+    editTask() {        
             let tasks = new db(TASK_DB);
-
-            this.state.tasks = tasks.get();
-        } else {
-            console.error("Database name: '"+database+"' does not exist");
-        }
-    },
-    editTask(task) {        
-            let tasks = new db(TASK_DB);
-
-            this.state.tasks.splice(task.id, 1, task);
           
             tasks.create(this.state.tasks);
         

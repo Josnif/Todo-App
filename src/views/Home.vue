@@ -5,6 +5,8 @@
     <Guest @login="checkUser" v-if="! auth" />
 
     <Todos class="mt-5" :user="username" v-else />
+
+    <Footer :user="username" v-if="auth" />
     
   </div>
 </template>
@@ -13,11 +15,12 @@
   import Todos from '@/components/Todo/Todos.vue'
   import Guest from '@/components/Guest'
   import Header from '@/components/layout/Header.vue';
+  import Footer from '@/components/layout/Footer.vue';
 
 export default {
   name: 'Home',
   components: {
-    Header, Todos, Guest
+    Header, Todos, Guest, Footer
   },
 
   data() {

@@ -33,3 +33,42 @@ body {
     }
     
 }
+
+/* To do CSS */
+
+/* -------------- Add todo section ----------------- */
+.top-banner {
+    position: absolute;
+    width: 285px;
+    height: 229.7px;
+    right: -24px;
+    top: -60px;
+ }
+ .itb-1 {
+    position: absolute;
+    width: 197px;
+    height: 153px;
+    left: 64px;
+    top: 24px;
+    background: linear-gradient(180deg, #1E2A93 0%, #FFB8A9 100%);
+    border-radius: 50%;
+ }
+ .itb-2 {
+   position: absolute;
+    width: 197px;
+    height: 168.7px;
+    left: 97px;
+    top: 25.7px;
+    background: #1E2A93;
+    transform: matrix(1, 0, 0, -1, 0, 0);
+    border-radius: 50%;
+ }
+ .itb-3 {
+   position: absolute;
+    width: 207px;
+    height: 160px;
+    left: 122px;
+    top: 50px;
+    background: linear-gradient(180deg, #FFB8A9 0%, #F1B0A8 27.08%, #1E2A93 100%);
+    border-radius: 50%;
+ }

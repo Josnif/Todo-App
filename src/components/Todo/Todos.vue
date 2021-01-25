@@ -3,9 +3,9 @@
     <div class="container">
         <div class="row justify-content-center">
             <Task />
-            <div class="my-card mt-5">
-                <h4 class="" @click="openModal = true">Add New Category</h4>
-            </div>
+        </div>
+        <div class="my-card mt-5">
+            <h4 class="" @click="openModal = true">Add New Category</h4>
         </div>
     </div>
     <Modal @close-modal="openModal=false" v-if="openModal">
@@ -53,7 +53,9 @@ export default {
   .my-card {
     box-shadow: 2px 3px 15px 4px #ddd, -2px -3px 15px 4px #ddd;
     background-color: #fff;
-    padding: 30px;
+    padding: 20px;
+    margin: 0 auto;
+    width: 50%;
   }
   .card {
         border:0;
