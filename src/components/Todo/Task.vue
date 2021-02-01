@@ -1,7 +1,7 @@
 <template>
-  <div>
-    <draggable element="div" class="col-md-12" v-model="$store.state.categories" :options="dragOptions">
-        <transition-group class="row">
+
+    <div class="col-md-12">
+        <div class="row">
             <div class="col-md-4 mb-3" v-for="(element, index) in $store.state.categories" :key="element.id">
                 <div class="card">
                     <div class="card-header">
@@ -23,14 +23,13 @@
                             </transition-group>
                         </draggable>
                         <div class="small-card">
-                            <h5 class="text-center" @click="addNew(element.id)">Add new card</h5>
+                            <h5 class="text-center" v-if="!$isMobile()" @click="addNew(element.id)">Add new card</h5>
                         </div>
                     </div>
                 </div>
             </div>
-        </transition-group>
-    </draggable>
-  </div>
+        </div>
+    </div>
 </template>
 
 <script>
@@ -107,10 +106,10 @@ export default {
 </script>
 
 <style>
- .delete-button {
+ .card-title + .delete-button {
      position:absolute;
      right: 10px;
-     color: rgb(179, 18, 18);
+     color: rgb(207 167 241);
  }
  .del-cate {
      top: 10px

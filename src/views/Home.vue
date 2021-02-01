@@ -1,12 +1,12 @@
 <template>
   <div>
-    <Header :user="username" v-if="auth" />
+    <Header :user="username" v-if="(auth, $isMobile())" />
 
     <Guest @login="checkUser" v-if="! auth" />
 
-    <Todos class="mt-5" :user="username" v-else />
+    <Todos class="mt-5 mb-3" :user="username" v-else />
 
-    <Footer :user="username" v-if="auth" />
+    <Footer :user="username" v-if="(auth, $isMobile())" />
     
   </div>
 </template>

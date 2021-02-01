@@ -4,7 +4,7 @@
         <div class="row justify-content-center">
             <Task />
         </div>
-        <div class="my-card mt-5">
+        <div class="my-card mt-5 mb-3">
             <h4 class="" @click="openModal = true">Add New Category</h4>
         </div>
     </div>
@@ -41,6 +41,8 @@ export default {
     created() {
         this.$store.get('tasks');
         this.$store.get('categories');
+
+        console.log(this.$isMobile())
     },
     mounted(){
         // console.log(this.$store.state.tasks)

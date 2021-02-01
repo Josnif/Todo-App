@@ -36,6 +36,41 @@ body {
 
 /* To do CSS */
 
+/* App.vue css */
+  #app {
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    /* text-align: center; */
+    color: #00313a;
+    line-height: 1.4;
+    overflow-x: hidden;
+  }
+  
+  * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden
+  }
+  .bg-col {
+    background: #f1f1f1f7;
+  }
+  .preload {
+    transform: translateY(300px);
+  }
+  .full-height {
+    height: 100vh;
+  }
+  .flex-center {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+  .position-ref {
+    position: relative;
+  }
+
 /* -------------- Add todo section ----------------- */
 .top-banner {
     position: absolute;
@@ -50,7 +85,7 @@ body {
     height: 153px;
     left: 64px;
     top: 24px;
-    background: linear-gradient(180deg, #1E2A93 0%, #FFB8A9 100%);
+    background: linear-gradient(180deg, #1E2A93 0%, #e6d178 100%);
     border-radius: 50%;
  }
  .itb-2 {
@@ -69,6 +104,15 @@ body {
     height: 160px;
     left: 122px;
     top: 50px;
-    background: linear-gradient(180deg, #FFB8A9 0%, #F1B0A8 27.08%, #1E2A93 100%);
+   /* background: linear-gradient(180deg, #FFB8A9 0%, #F1B0A8 27.08%, #1E2A93 100%); */
+    background: linear-gradient(
+180deg
+, #e6d178 0%, #e6d178 27.08%, #1E2A93 100%);
     border-radius: 50%;
+ }
+ .card {
+  background: #cfa7f1;
+ }
+ .card-header {
+   background-color: rgb(76 7 134)!important;
  }

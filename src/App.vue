@@ -29,39 +29,7 @@ export default {
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  /* text-align: center; */
-  color: #2c3e50;
-  line-height: 1.4;
-  overflow: hidden;
-}
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    overflow:hidden
-}
-.bg-col {
-  background: #f1f1f1f7;
-}
-.preload {
-  transform: translateY(300px);
-}
-.full-height {
-  height: 100vh;
-}
-.flex-center {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-}
-.position-ref {
-  position: relative;
-}
 /*
 #nav {
   padding: 30px;
