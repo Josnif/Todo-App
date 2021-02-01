@@ -30,15 +30,15 @@ export default {
     }
     @media (min-width: 630px) {
         .menu-center {
-            margin-right: 115px!important;
+            margin-right: 85px!important;
             flex-grow: 0.2!important;
         }
     }
     .mobile-nav-menu {
-        background: #f8f9fa;
+        background: #3c003e;
         z-index: 1;
         padding: 10px 10px;
-        box-shadow: -2px -2px 15px 6px #ddd;
+        /* box-shadow: -2px -2px 15px 6px #ddd; */
     }
     .mobile-nav-space {
         height: 95px;
@@ -47,10 +47,10 @@ export default {
         margin: 0 auto;
     }
     .menu-center {
-        background:  #21003e;
+        background: #f8f9fa;
         border-radius: 50%;
         font-size: 1.9rem!important;
-        color: #fff;
+        color: #3c003e;
         /*top: -5px;*/
         width: 100%!important;
         transition: all .6s;
@@ -69,7 +69,7 @@ export default {
         background: #3208b3;
     }
     .menu-link:hover, .menu-link:focus {
-        color: #3208b3!important;
+        color: #ffffff!important;
     }
 
 </style>
