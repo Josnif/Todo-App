@@ -4,7 +4,7 @@
         <div class="row justify-content-center">
             <Task />
         </div>
-        <div class="my-card mt-5 mb-3">
+        <div class="add-btn-lg mt-5 mb-3">
             <h4 class="" @click="openModal = true">Add New Category</h4>
         </div>
     </div>
@@ -52,12 +52,15 @@ export default {
 
 </script>
 <style scoped>
-  .my-card {
-    box-shadow: 2px 3px 15px 4px #ddd, -2px -3px 15px 4px #ddd;
-    background-color: #fff;
-    padding: 20px;
+  .add-btn-lg {
+    box-shadow: 1px 2px 0px 0px #ddd, -1px -2px 0px 0px #ddd;
+    background-color: #21003e;
+    padding: 25px 35px;
+    text-align: center;
     margin: 0 auto;
     width: 50%;
+    border-radius: 3rem;
+    color: #fff;
   }
   .card {
         border:0;

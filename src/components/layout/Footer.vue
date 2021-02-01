@@ -47,7 +47,7 @@ export default {
         margin: 0 auto;
     }
     .menu-center {
-        background:  #3600dc;
+        background:  #21003e;
         border-radius: 50%;
         font-size: 1.9rem!important;
         color: #fff;
