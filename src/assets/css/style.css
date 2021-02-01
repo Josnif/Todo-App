@@ -111,8 +111,11 @@ body {
     border-radius: 50%;
  }
  .card {
-  background: #cfa7f1;
+  background: #cfa7f1!important;
  }
  .card-header {
    background-color: rgb(76 7 134)!important;
+ }
+ .card-title {
+   color: #fff;
  }

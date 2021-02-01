@@ -23,7 +23,7 @@
                             </transition-group>
                         </draggable>
                         <div class="small-card">
-                            <h5 class="text-center" v-if="!$isMobile()" @click="addNew(element.id)">Add new card</h5>
+                            <h5 class="text-center" @click="addNew(element.id)">Add new card</h5>
                         </div>
                     </div>
                 </div>
