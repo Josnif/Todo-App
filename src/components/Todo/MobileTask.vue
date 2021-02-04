@@ -9,7 +9,7 @@
     <div class="page-content w-100">
 
       <div class="page-head">
-        <div class="back-arrow pt-4"><i class="fas fa-arrow-left fa-2x" aria-hidden="true"></i></div>
+        <div @click="hasHistory() ? $router.go(-1) : $router.push('/')" class="back-arrow pt-4"><i class="fas fa-arrow-left fa-2x" aria-hidden="true"></i></div>
         <h3 class="pt-3 pb-5 new-task w-75">Create New Task</h3>
         <div class="mx-auto form-row">
           <label class="task_label" for="name">Name</label>
@@ -55,13 +55,13 @@
 </template>
 
 <script>
-import Modal from "@/components/Todo/Modal"
+// import Modal from "@/components/Todo/Modal"
 import AddCategory from "@/components/Todo/AddCategory"
 
 export default {
-  name: "Add",
+  name: "MobileTask",
   components: {
-      Modal,
+      // Modal,
       AddCategory
   },
   data() {
@@ -69,6 +69,9 @@ export default {
       openModal: false,
       date: new Date().toISOString().substr(0, 10)
     }
+  },
+  methods: {
+    hasHistory () { return window.history.length > 2 }
   }
 }
 </script>

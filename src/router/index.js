@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue';
 import NotFound from "../components/404.vue";
+import addTask from '../views/Mobile/addTask'
 
 Vue.use(VueRouter)
 
@@ -10,6 +11,12 @@ Vue.use(VueRouter)
     path: '/',
     name: 'Home',
     component: Home
+    
+  },
+  {
+    path: '/add-task',
+    name: 'AddTask',
+    component: addTask
     
   },
   {

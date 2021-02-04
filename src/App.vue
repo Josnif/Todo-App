@@ -8,6 +8,7 @@
 </template>
 
 <script>
+    // bring the auth out, and somethings in Home page here.
 export default {
   components: {
   },

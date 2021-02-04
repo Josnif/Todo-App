@@ -3,12 +3,11 @@
     <div class="mobile-nav-space"></div>
     <nav class="mobile-nav-menu fixed-bottom">
         <div class="menu-list row">
-            <router-link :to="{name: 'Home'}" class="navbar-brand menu-link col"><i class="fas fa-tachometer-alt"></i></router-link>
-            <router-link to="#" class="navbar-brand menu-link col"><i class="fas fa-tasks"></i></router-link>
-            <router-link to="/add" class="menu-center col navbar-brand no-mg"><i class="fas fa-plus mx-auto w-100"></i></router-link>
+            <div class="navbar-brand col"><a :to="{name: 'Home'}" class=" menu-link"><i class="fas fa-tachometer-alt"></i></a></div>
+            <div class="navbar-brand col" @click="loadPage('taskList')"><router-link to="/" class="menu-link"><i class="fas fa-tasks"></i></router-link></div>
+            <div class="navbar-brand col" @click="loadPage('add-task')"><router-link to="/add-task"  class="menu-center no-mg"><i class="fas fa-plus mx-auto w-100"></i></router-link></div>
             <router-link to="#" class="navbar-brand menu-link col"><i class="far fa-calendar"></i></router-link>
             <router-link to="#" class="navbar-brand menu-link col"><i class="far fa-user"></i></router-link>
-
         </div>
     </nav>
   </div>
@@ -18,7 +17,16 @@
 <script>
 export default {
     name: "Footer",
-    props: ["user"]
+    props: ["user"],
+    methods: {
+        loadPage(evt) {
+            if(this.$isMobile()) {
+                this.$router.go(`\${evt}`)
+            } else {
+                this.$emit('loadPage', evt);
+            }
+        }
+    }
 }
 </script>
 
@@ -64,9 +72,9 @@ export default {
         transition: all .6s;
     }
     .menu-center:focus, .menu-center:hover {
-        box-shadow: 0px 5px 8px 11px #ddd;
-        color: #fff;
-        background: #3208b3;
+        /* box-shadow: 0px 5px 8px 11px #ddd; */
+        color: #fff!important;
+        background: #210022;
     }
     .menu-link:hover, .menu-link:focus {
         color: #ffffff!important;

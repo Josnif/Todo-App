@@ -43,7 +43,7 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     /* text-align: center; */
-    color: #00313a;
+    color: #304;
     line-height: 1.4;
     overflow-x: hidden;
     background: #58315a;
@@ -114,10 +114,13 @@ body {
     border-radius: 50%;
  }
  .card {
-  background: #cfa7f1!important;
+  /* background: #cfa7f1!important; */
+  background: #21003e85!important;
+  color: white;
  }
  .card-header {
-   background-color: rgb(76 7 134)!important;
+  /* background-color: rgb(76 7 134)!important; */
+   background-color: #21003e!important;
  }
  .card-title {
    color: #fff;

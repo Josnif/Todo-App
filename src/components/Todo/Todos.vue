@@ -16,7 +16,7 @@
 
 <script>
 // import TodoItem from './TodoItem.vue';
-import Modal from "./Modal"
+import Modal from "../plugins/Modal"
 import AddCategory from "./AddCategory"
 import Task from "./Task"
 

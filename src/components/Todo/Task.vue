@@ -16,7 +16,7 @@
                                     <div v-if="task.category_id == element.id" class="small-card">
                                         <textarea v-if="task === editingTask" class="form-control text-input" @keyup.enter="endEditing()" @blur="endEditing()" v-model="task.name"></textarea>
                                         <label for="checkbox" v-if="task !== editingTask" @click="editTask(task)">{{ task.name }}</label>
-                                        <span class="delete-button" @click="deleteAction('tasks',index)"><i class="fas fa-trash"></i></span>
+                                        <span class="delete-button" @click="deleteAction('tasks',index)"><!-- <i class="fas fa-trash"></i> --></span>
                                         <hr>
                                     </div>
                                 </div>
@@ -91,7 +91,7 @@ export default {
         }
     },
     created() {
-        console.log(this.$store.state.tasks)
+        // console.log(this.$store.state.tasks)
     },
     computed: {
         dragOptions () {
